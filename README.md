@@ -6,8 +6,13 @@ This Python script uses Selenium to scrape cryptocurrency market data from CoinM
 
 Make sure you have the following Python libraries installed:
 
-selenium
-pandas
+* Selenium
+* Pandas
+
+# Instructions
+* Download and install the ChromeDriver executable.
+* Update the webdriver.Chrome() line with the path to the ChromeDriver executable on your system.
+* Run the script.
 
 # Usage
 
