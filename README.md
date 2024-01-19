@@ -14,12 +14,17 @@ Make sure you have the following Python libraries installed:
 * Update the webdriver.Chrome() line with the path to the ChromeDriver executable on your system.
 * Run the script.
 
-# Usage
+# Script Overview
+* The script uses Selenium to open the CoinMarketCap historical data page.
+* It locates cryptocurrency data elements using XPaths.
+* Data for each cryptocurrency (Name, Marketcap, Price, % 24H, % 7D, Vol_24h) is extracted into separate lists.
+* A list of dictionaries (result) is created to store the data.
+* The script prints the number of cryptocurrencies and the names of each cryptocurrency (for confirmation).
+* The data is then structured into a DataFrame using the pandas library.
+* The resulting DataFrame (result_df) is printed.
 
-The script will launch a Chrome browser, navigate to the specified CoinMarketCap page, and retrieve the data. The results will be displayed in the console and stored in a Pandas DataFrame.
+# Note
 
-# Output
-
-The scraped data is stored in a Pandas DataFrame and printed to the console. You can also customize the script to save the data to a CSV file or other formats.
+You can also customize the script to save the data to a CSV file or other formats.
 
 Feel free to modify the script according to your specific needs or integrate it into your data analysis pipeline.
